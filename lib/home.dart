@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'dart:ui';
 import 'package:flutter/cupertino.dart';
@@ -80,6 +81,59 @@ class _homeState extends State<home> with TickerProviderStateMixin {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.all(Radius.circular(100)),
                               color: Color.fromRGBO(37, 37, 37, 1)
+                            ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: <Widget>[
+                                Padding(
+                                  padding: EdgeInsets.only(left: 50.0),
+                                  child: Container(
+                                    child: Text("Logo"),
+                                  ),
+                                ),
+                                Spacer(),
+                                Padding(
+                                  padding: EdgeInsets.only(right: 50.0),
+                                  child: Container(
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                      children: <Widget>[
+                                        Padding(
+                                          padding: EdgeInsets.all(15.0),
+                                          child: FlatButton(
+                                            onPressed: () => {},
+                                              child: Center(
+                                                child: Text("Home", style: TextStyle(color: Color.fromRGBO(254, 254, 254, 1),
+                                                    fontWeight: FontWeight.w500, fontSize: MediaQuery.of(context).size.width/80),),
+                                              )
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: EdgeInsets.all(15.0),
+                                          child: Container(
+                                            child: Text("Projects", style: TextStyle(color: Color.fromRGBO(254, 254, 254, 1),
+                                                fontWeight: FontWeight.w500, fontSize: MediaQuery.of(context).size.width/80),),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: EdgeInsets.all(15.0),
+                                          child: Container(
+                                            child: Text("About", style: TextStyle(color: Color.fromRGBO(254, 254, 254, 1),
+                                                fontWeight: FontWeight.w500, fontSize: MediaQuery.of(context).size.width/80),),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: EdgeInsets.all(15.0),
+                                          child: Container(
+                                            child: Text("Skills", style: TextStyle(color: Color.fromRGBO(254, 254, 254, 1),
+                                                fontWeight: FontWeight.w500, fontSize: MediaQuery.of(context).size.width/80),),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
                         ),
