@@ -32,14 +32,14 @@ class _introState extends State<intro> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(21, 20, 24, 1),
+      backgroundColor: Color.fromRGBO(30, 30, 30, 1),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Container(
               child: Text('Loading...',style: GoogleFonts.nunito(textStyle: TextStyle(
-                  color: Colors.white, letterSpacing: 2, fontSize: 25, fontWeight: FontWeight.bold),)
+                  color: Color.fromRGBO(254, 254, 254, 1), letterSpacing: 2, fontSize: 25, fontWeight: FontWeight.bold),)
               ),
             ),
             Padding(
@@ -52,7 +52,7 @@ class _introState extends State<intro> {
                 animationDuration: 2000,
                 percent: 1.0,
                 linearStrokeCap: LinearStrokeCap.roundAll,
-                progressColor: Colors.white,
+                progressColor: Color.fromRGBO(244, 202, 54, 1),
               ),
             ),
           ],
