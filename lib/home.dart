@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'background/lava_painter.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 List<Color> colors = [
   Color(0xfff857a6),
@@ -71,13 +72,67 @@ class _homeState extends State<home> with TickerProviderStateMixin {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: <Widget>[
-                        Container(),
+                        Padding(
+                          padding: EdgeInsets.only(top: MediaQuery.of(context).size.width/50),
+                          child: Container(
+                            width: MediaQuery.of(context).size.width/1.2,
+                            height: MediaQuery.of(context).size.width/20,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.all(Radius.circular(100)),
+                              color: Color.fromRGBO(37, 37, 37, 1)
+                            ),
+                          ),
+                        ),
                         Spacer(),
                         Container(
                             child: Text("Yash Tandon", style: TextStyle(color: Color.fromRGBO(254, 254, 254, 1), fontWeight: FontWeight.bold, fontSize: MediaQuery.of(context).size.width/15),)
                         ),
                         Spacer(),
-                        Container()
+                        Container(
+                          width: MediaQuery.of(context).size.width/2,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: <Widget>[
+                              Container(
+                                width: MediaQuery.of(context).size.width/20,
+                                height: MediaQuery.of(context).size.width/20,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color.fromRGBO(37, 37, 37, 1),
+                                ),
+                                child: Padding(
+                                  padding: EdgeInsets.all(10.0),
+                                  child: Icon(FontAwesomeIcons.linkedinIn, color: Color.fromRGBO(254, 254, 254, 1), size: MediaQuery.of(context).size.width/50,),
+                                ),
+                              ),
+                              Container(
+                                width: MediaQuery.of(context).size.width/20,
+                                height: MediaQuery.of(context).size.width/20,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color.fromRGBO(37, 37, 37, 1),
+                                ),
+                                child: Padding(
+                                  padding: EdgeInsets.all(10.0),
+                                  child: Icon(FontAwesomeIcons.github, color: Color.fromRGBO(254, 254, 254, 1), size: MediaQuery.of(context).size.width/50),
+                                ),
+                              ),
+                              Container(
+                                width: MediaQuery.of(context).size.width/20,
+                                height: MediaQuery.of(context).size.width/20,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Color.fromRGBO(37, 37, 37, 1),
+                                ),
+                                child: Padding(
+                                  padding: EdgeInsets.all(10.0),
+                                  child: Icon(FontAwesomeIcons.instagram, color: Color.fromRGBO(254, 254, 254, 1), size: MediaQuery.of(context).size.width/50),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Spacer(),
                       ],
                     ),
                   ),
