@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 import 'dart:async';
 
-import 'package:portfolio/home.dart';
+import 'homepage/home.dart';
 
 class intro extends StatefulWidget {
   @override
