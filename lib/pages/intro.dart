@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
+import 'package:portfolio/pages/about/aboutpc.dart';
 import 'dart:async';
 
 import 'homepage/home.dart';
@@ -26,7 +27,7 @@ class _introState extends State<intro> {
 
   route() {
     Navigator.pushReplacement(context, MaterialPageRoute(
-        builder: (context) => home())
+        builder: (context) => aboutpc())
     );
   }
   @override
