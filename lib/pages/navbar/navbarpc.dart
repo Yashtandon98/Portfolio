@@ -17,64 +17,52 @@ class navbarpc extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           Padding(
-            padding: EdgeInsets.only(left: 50.0),
+            padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/40),
             child: Container(
               child: Text("Logo"),
             ),
           ),
           Spacer(),
-          Padding(
-            padding: EdgeInsets.only(right: 40.0),
-            child: Container(
+          Container(
+            child: Padding(
+              padding: EdgeInsets.fromLTRB(0, MediaQuery.of(context).size.width/80, MediaQuery.of(context).size.width/40, MediaQuery.of(context).size.width/80),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(0, 20, 5, 20),
-                    child: FlatButton(
-                        onPressed: () => {},
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
-                        hoverColor: Color.fromRGBO(244, 202, 54, 1),
-                        child: Center(
-                          child: Text("Home", style: GoogleFonts.nunito(textStyle: TextStyle(color: Color.fromRGBO(254, 254, 254, 1),
-                              fontWeight: FontWeight.w500, fontSize: MediaQuery.of(context).size.width/80)),),
-                        )
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(0, 20, 5, 20),
-                    child: FlatButton(
+                  FlatButton(
                       onPressed: () => {},
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
                       hoverColor: Color.fromRGBO(244, 202, 54, 1),
                       child: Center(
-                        child: Text("About", style: GoogleFonts.nunito(textStyle: TextStyle(color: Color.fromRGBO(254, 254, 254, 1),
+                        child: Text("Home", style: GoogleFonts.nunito(textStyle: TextStyle(color: Color.fromRGBO(254, 254, 254, 1),
                             fontWeight: FontWeight.w500, fontSize: MediaQuery.of(context).size.width/80)),),
-                      ),
+                      )
+                  ),
+                  FlatButton(
+                    onPressed: () => {},
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
+                    hoverColor: Color.fromRGBO(244, 202, 54, 1),
+                    child: Center(
+                      child: Text("About", style: GoogleFonts.nunito(textStyle: TextStyle(color: Color.fromRGBO(254, 254, 254, 1),
+                          fontWeight: FontWeight.w500, fontSize: MediaQuery.of(context).size.width/80)),),
                     ),
                   ),
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(0, 20, 5, 20),
-                    child: FlatButton(
-                      onPressed: () => {},
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
-                      hoverColor: Color.fromRGBO(244, 202, 54, 1),
-                      child: Center(
-                        child: Text("Skills", style: GoogleFonts.nunito(textStyle: TextStyle(color: Color.fromRGBO(254, 254, 254, 1),
-                            fontWeight: FontWeight.w500, fontSize: MediaQuery.of(context).size.width/80)),),
-                      ),
+                  FlatButton(
+                    onPressed: () => {},
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
+                    hoverColor: Color.fromRGBO(244, 202, 54, 1),
+                    child: Center(
+                      child: Text("Skills", style: GoogleFonts.nunito(textStyle: TextStyle(color: Color.fromRGBO(254, 254, 254, 1),
+                          fontWeight: FontWeight.w500, fontSize: MediaQuery.of(context).size.width/80)),),
                     ),
                   ),
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(0, 20, 5, 20),
-                    child: FlatButton(
-                      onPressed: () => {},
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
-                      hoverColor: Color.fromRGBO(244, 202, 54, 1),
-                      child: Center(
-                        child: Text("Projects", style: GoogleFonts.nunito(textStyle: TextStyle(color: Color.fromRGBO(254, 254, 254, 1),
-                            fontWeight: FontWeight.w500, fontSize: MediaQuery.of(context).size.width/80)),),
-                      ),
+                  FlatButton(
+                    onPressed: () => {},
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
+                    hoverColor: Color.fromRGBO(244, 202, 54, 1),
+                    child: Center(
+                      child: Text("Projects", style: GoogleFonts.nunito(textStyle: TextStyle(color: Color.fromRGBO(254, 254, 254, 1),
+                          fontWeight: FontWeight.w500, fontSize: MediaQuery.of(context).size.width/80)),),
                     ),
                   ),
                 ],
