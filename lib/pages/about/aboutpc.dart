@@ -120,7 +120,7 @@ class _aboutpcState extends State<aboutpc> with TickerProviderStateMixin {
                                   color: Color.fromRGBO(37, 37, 37, 1),
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsets.all(MediaQuery.of(context).size.width/80),
+                                  padding: EdgeInsets.fromLTRB(MediaQuery.of(context).size.width/80,MediaQuery.of(context).size.width/80,MediaQuery.of(context).size.width/80,0),
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment: CrossAxisAlignment.center,
